@@ -86,6 +86,25 @@ class StringArray
 
 int main() 
 {
+    StringArray array;
+
+    array.inputArrayFromKeyboard();
+
+    // string arr1[] = { "Hello", "2", "world", ":-)" };
+    // string arr2[] = { "1234", "1567", "-2", "computer science" };
+    // string arr3[] = { "Russia", "Denmark", "Kazan" };
+
+    // array.inputArray(arr1, 4);
+    // array.inputArray(arr2, 4);
+    // array.inputArray(arr3, 3);
+
+    StringArray filteredArray = array.filterShortStrings();
+
+    cout << "\nOriginal array:\t";
+    array.display();
+    cout << "\nFiltered array:\t";
+    filteredArray.display();
+    cout << endl;
 
     return 0;
 }
